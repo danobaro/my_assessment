@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Mini App</title>
+
+    <style>
+        body{
+            background-color: white;
+        }
+      
+      div.user-photo {
+        margin: 1em auto;
+      }
+    .select{
+        margin: 2.5em;
+    }
+    .user-photo{
+        
+        width: 150px;
+        height: 150px;
+        margin: 1em auto;
+        background: #fff;
+        border-radius:50%;
+        background-size:cover;
+        overflow:hidden;
+    }
+    div.details{
+        color: white;
+        background-color: #6200ee;
+        font-size: 1.3em;
+        margin-top: 4em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        
+    }
+    p{
+        margin: 0.3em;
+    }
+    #outcome{
+       position:absolute;
+        right: 2.2em;
+        bottom: 6.5em;
+        width: 100px;
+        text-align: center;
+       }
+	.mdc-typography--headline5{
+       background-color:white;
+       padding: 1em;
+       border-radius: 10%;
+     } 
+      .ptag{
+        height: 40px;
+        color: white;
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        border-bottom-width: 5px;
+        font-size: 2em;
+        margin: none;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    
+      }
+      .mdc-button{
+        margin-top: 2.5em;
+        border: 1px;
+        border-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="filter-query" class="mdc-icon-button material-icons" >filter_list</button>
+    <div class="select">
+        <select class="select-text"><option disabled selected>User Select</option></select>
+    </div>
+    <div class="user-photo">
+        <img src="https://via.placeholder.com/" alt="image">
+    </div>
+    <div class="details mdc-elevation--z3">
+        <p><span class="prop" data-age>Age:</span><span class="value" data-age-value>10</span></p>
+        <p><span class="prop" data-height>Height:</span><span class="value" data-height-value>7</span></p>
+        <p><span class="prop" data-weight>Weight:</span><span class="value" data-weight-value>23</span></p>
+        <p><span class="prop" data-gender>Gender:</span><span class="value" data-gender-value>male</span></p>
+        <p><span class="prop" data-country>Country:</span><span class="value" data-country-value>Nigeria</span></p>
+    </div>
+    <button id="oracle" class="mdc-button" >Calculate BMI</button>
+    <div id="outcome">
+        <header class="mdc-typography--headline5">BMI</header>
+        <p class="ptag">test</p>
+    </div>
+    <script>
+      const fetchAndDisplayUsers = () => {
+        users.push({
+          age: 40,
+          weight: 75,
+          height: 6,
+          country: 'Nigeria',
+          name: 'Charles Odili',
+          id: 'dfhb454768DghtF'
+        });
+
+        displayUsers(users);
+      };
+      
+      const startApp = () => {
+        
+      };
+
+      startApp();
+    </script>
+  </body>
+</html>
